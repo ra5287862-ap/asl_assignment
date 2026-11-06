@@ -11,79 +11,67 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <header>
-      <!-- this is a naveber section  -->
-      <div class="sticky top-0 z-20">
-        <div class="navbar bg-base-100">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class=" menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow px-1  text-xl font-semibold"
-              >
-                <li ><a>home</a></li>
-                <li><a>Listed Books</a></li>
-                <li><a>Pages to Read</a></li>
-              </ul>
-            </div>
-            <a class="btn btn-ghost text-3xl font-bold">Book Vibe</a>
-          </div>
-          <div class="navbar-center hidden lg:flex ">
-            <ul class="menu menu-horizontal px-1  text-xl font-semibold">
-              <li><a>home</a></li>
-              <li><a>listed book</a></li>
-              <li><a>pages to read</a></li>
-            </ul>
-          </div>
-          <div class="navbar-end">
-            <a class="btn capitalize bg-[#23BE0A] text-white">login</a>
-            <a class="btn capitalize bg-[#59C6D2]">sign up</a>
-          </div>
-        </div>
+  <body class="">
+    <header class="w-full max-w-[1171px] min-h-[57px] mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+      <!-- naveber  -->
+
+    <div class="flex justify-between">
+      <h3 class="font-extrabold text-[28px]">Book Vibe</h3>
+    <ul class="flex justify-between gap-5">
+      <li class="border border-green-500 rounded-lg md:flex items-center gap-4 lg:gap-6 px-[20px] py-[14px]">Home</li>
+      <li class="px-[20px] py-[14px]">Listed Books</li>
+      <li class="px-[20px] py-[14px]">Pages to Read</li>
+      
+    </ul>
+    <div class="flex justify-between gap-5">
+      <button class="bg-green-500 text-white rounded-lg px-[20px] py-[14px]">Sign In</button>
+      <button class="bg-sky-400 text-white rounded-lg px-[20px] py-[14px]">Sign Up</button>
       </div>
-      <!-- this is a banner section  -->
-      <div class="w-12/12 lg:w-11/12 m-auto bg-base-200 py-24 rounded-lg  flex justify-center">
-        <div class="hero-content flex-col lg:flex-row-reverse justify-around">
-          <div class="w-6/12 md:w-3/12">
-            <img src="./assets/Banner.png" class=" " />
-          </div>
-          <div class=" ">
-            <h1 class="text-3xl md:text-5xl font-bold text-center md:text-left">
-              Books to freshen up <br />
-              your bookshelf
-            </h1>
-            <div class="text-center md:text-start">
-              <button class="btn bg-[#23BE0A] mt-5">View The List</button>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
+
     </header>
     <main>
-      <!-- this is a card  section  -->
-      <h1 class="text-center text-lg font-semibold pt-10 pb-5">books</h1>
+      <!--Hero section-->
+      <section class="flex items-center justify-center p-4 md:p-8 mt-6">
+  
+  <div class="w-full max-w-6xl bg-[#f3f3f3] rounded-3xl border border-gray-300 p-8 md:p-16 lg:p-20">
+    <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-12">
+      
+      <!-- Left Content Section -->
+      <div class="w-full md:w-1/2 space-y-8 text-center md:text-left">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-gray-900 leading-tight">
+          Books to freshen up <br>
+          your bookshelf
+        </h1>
+        
+        <div class="pt-2">
+          <button class="bg-[#23be0a] hover:bg-[#1fa909] text-white font-bold py-4 px-7 rounded-xl transition duration-300 shadow-md hover:shadow-lg transform active:scale-95">
+            View The List
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Image Section -->
+      <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+        <div class="max-w-xs sm:max-w-sm w-full transition duration-500 hover:scale-105">
+          <img 
+            src="/assets/Banner.png" 
+            alt="Book Cover" 
+            class="w-full h-auto drop-shadow-2xl rounded-r-md"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+      <!-- card  section  -->
+      <h1 class="text-center text-lg font-semibold pt-10 pb-5">Books</h1>
       <div class=" flex justify-center border-2">
         <div
         class="w-11/12 md:w-10/12 mx-auto  z-10 grid gap-10 md:grid-cols-3 mb-10 mt-5 "
       >
-        <!-- this is a card 1 section  -->
+        <!-- card 1   -->
         <div class="card bg-base-100 w-80 shadow-xl border-2 mx-auto">
           <figure class="px-10 py-10 bg-[#F3F3F3] mx-5 my-5 rounded-xl">
             <img
@@ -110,7 +98,7 @@
             </div>
           </div>
         </div>
-        <!-- this is a card 2 section  -->
+        <!--  card 2   -->
         <div class="card bg-base-100 w-80 shadow-xl border-2 mx-auto">
           <figure class="px-10 py-10 bg-[#F3F3F3] mx-5 my-5 rounded-xl">
             <img
@@ -138,7 +126,7 @@
             </div>
           </div>
         </div>
-        <!-- this is a card  section 3 -->
+        <!--  card  section 3 -->
         <div class="card bg-base-100 w-80 shadow-xl border-2 mx-auto">
           <figure class="px-10 py-10 bg-[#F3F3F3] mx-5 my-5 rounded-xl">
             <img
@@ -166,7 +154,7 @@
             </div>
           </div>
         </div>
-        <!-- this is a card  section 4 -->
+        <!--  card  section 4 -->
         <div class="card bg-base-100 w-80 shadow-xl border-2 mx-auto">
           <figure class="px-10 py-10 bg-[#F3F3F3] mx-5 my-5 rounded-xl">
             <img
@@ -194,7 +182,7 @@
             </div>
           </div>
         </div>
-        <!-- this is a card  section 5  -->
+        <!-- card  section 5  -->
         <div class="card bg-base-100 w-80 shadow-xl border-2 mx-auto">
           <figure class="px-10 py-10 bg-[#F3F3F3] mx-5 my-5 rounded-xl">
             <img
@@ -222,7 +210,7 @@
             </div>
           </div>
         </div>
-        <!-- this is a card  section 6 -->
+        <!-- card  section 6 -->
         <div class="card bg-base-100 w-80 shadow-xl border-2 mx-auto">
           <figure class="px-10 py-10 bg-[#F3F3F3] mx-5 my-5 rounded-xl">
             <img
@@ -250,7 +238,7 @@
             </div>
           </div>
         </div>
-        <!-- this is a card  section 7  -->
+        <!-- card  section 7  -->
         <div class="card bg-base-100 w-80 shadow-xl border-2 mx-auto">
           <figure class="px-10 py-10 bg-[#F3F3F3] mx-5 my-5 rounded-xl">
             <img
@@ -278,7 +266,7 @@
             </div>
           </div>
         </div>
-        <!-- this is a card  section 8 -->
+        <!--  card  section 8 -->
         <div class="card bg-base-100 w-80 shadow-xl border-2 mx-auto">
           <figure class="px-10 py-10 bg-[#F3F3F3] mx-5 my-5 rounded-xl">
             <img
@@ -306,7 +294,7 @@
             </div>
           </div>
         </div>
-        <!-- this is a card  section 9 -->
+        <!--  card  section 9 -->
         <div class="card bg-base-100 w-80 shadow-xl border-2 mx-auto">
           <figure class="px-10 py-10 bg-[#F3F3F3] mx-5 my-5 rounded-xl">
             <img
@@ -337,7 +325,7 @@
       </div>
       </div>
     </main>
-      <!-- this is a footer section  -->
+    
       <footer >
     
       </footer>
